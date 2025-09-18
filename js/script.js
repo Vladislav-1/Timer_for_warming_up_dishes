@@ -21,6 +21,12 @@ mainButtonElement.addEventListener(
     let y = mainSelectElement;
     let z;
     let w;
+    if (y > 5999) {
+      mainTextElement.innerHTML = `Недопустимое время тайминга!<br>Измените время разогрева блюда!`;
+      y = 0;
+      z = 0;
+      w = 0;
+    }
     for (let i = y; i >= 0; i--) {
       setTimeout(() => {
         if (y >= 60) {
