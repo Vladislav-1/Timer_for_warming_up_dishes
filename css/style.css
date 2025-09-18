@@ -107,3 +107,22 @@ html {
 .buttonStart:hover {
   cursor: pointer;
 }
+
+@media (max-width: 375px) {
+  html {
+    font-size: 16px;
+  }
+
+  .header {
+    padding: 20px 0px;
+  }
+
+  .main__selectBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+  }
+}
