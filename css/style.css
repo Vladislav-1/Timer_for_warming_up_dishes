@@ -35,6 +35,10 @@ html {
   gap: 15px;
 }
 
+.main__inputDishNameBox {
+  margin-top: 20px;
+}
+
 .main__selectBox {
   display: flex;
   flex-direction: column;
@@ -47,6 +51,7 @@ html {
   height: 30px;
   width: 70px;
   text-align: center;
+  outline: none;
 }
 
 .main__select:hover {
@@ -81,11 +86,11 @@ html {
 
 .main__inputDishName {
   width: 300px;
-  height: 30px;
+  min-height: 30px;
   outline: none;
   text-align: center;
   color: rgba(170, 50, 50, 1);
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .showTime {
@@ -118,7 +123,11 @@ html {
   }
 
   .main__selectBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     padding: 10px 20px;
   }
 }
-
