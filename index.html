@@ -12,26 +12,13 @@
     </header>
     <main class="main">
       <input type="text" class="main__inputDishName" />
-      <select class="main__select">
-        <option class="main__option elem1" value="5000">
-          Разогрев блюда 5 секунд
-        </option>
-        <option class="main__option elem2" value="10000">
-          Разогрев блюда 10 секунд
-        </option>
-        <option class="main__option elem3" value="15000">
-          Разогрев блюда 15 секунд
-        </option>
-        <option class="main__option elem4" value="20000">
-          Разогрев блюда 20 секунд
-        </option>
-        <option class="main__option elem5" value="25000">
-          Разогрев блюда 25 секунд
-        </option>
-        <option class="main__option elem6" value="30000">
-          Разогрев блюда 30 секунд
-        </option>
-      </select>
+      <div class="main__selectBox">
+        <label for="main__select"
+          >Укажите время разогрева блюда в секундах:</label
+        >
+        <input type="number" id="main__select" min="0" />
+        <div class="main__timer">00:00</div>
+      </div>
       <button class="main__button">Старт</button>
       <div class="main__text"></div>
     </main>
